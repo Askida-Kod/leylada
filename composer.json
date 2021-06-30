@@ -1,0 +1,21 @@
+{
+    "name": "greencheap/leylada",
+    "type": "greencheap-theme",
+    "version": "1.0.0",
+    "title": "Leylada",
+    "description": "Lorem ipsum dolor sit amet",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GreenCheap",
+            "email": "support@greencheap.net",
+            "homepage": "https://greencheap.net"
+        }
+    ],
+    "extra": {
+        "image": "image.jpg"
+    },
+    "archive": {
+        "exclude": ["node_modules", "!/app"]
+    }
+}

@@ -1,0 +1,10 @@
+/vendor/
+/node_modules/
+*.zip
+*.log
+/dist
+.DS_Store
+themes.json
+/assets/dist
+.vscode
+/app/bundle/
