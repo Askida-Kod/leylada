@@ -8,8 +8,8 @@ Askıda Kod projesi; çocuk hakları, kadın hakları, hayvan hakları, eğitimd
 
 ## Deklerasyon
 
-- Askıda Kod'a dahil olan projelerin ana kuralları bu deklerasyon ile belirlenmektedir.
-- Askıdaki projeler arasında ihtiyaç durumlarına göre open source olarak belirlediğimiz projeler, GitHub üzerinde katkı sağlamak isteyen herkese açıktır.
+-   Askıda Kod'a dahil olan projelerin ana kuralları bu deklerasyon ile belirlenmektedir.
+-   Askıdaki projeler arasında ihtiyaç durumlarına göre open source olarak belirlediğimiz projeler, GitHub üzerinde katkı sağlamak isteyen herkese açıktır.
 
 ## TalentGrid Yazılımcı Topluluğuna Katılım
 
@@ -19,9 +19,9 @@ Yazılımcılar TalentGrid’e üye olarak hem sahip oldukları yetenekleri hem 
 
 Aşağıdaki kanallar üzerinden TalentGrid'e ulaşabilirsiniz;
 
-- [E-Posta](mailto:hello@talentgrid.io)
-- [Twitter](https://twitter.com/TalentGrid_io)
-- [LinkedIn](https://www.linkedin.com/company/talentgrid-io)
+-   [E-Posta](mailto:hello@talentgrid.io)
+-   [Twitter](https://twitter.com/TalentGrid_io)
+-   [LinkedIn](https://www.linkedin.com/company/talentgrid-io)
 
 ## Askıda Kod Projesine Destek Ol
 
@@ -31,39 +31,36 @@ Gönüllü yazılımcı, proje yöneticisi veya analist başvurusu yaparak yard�
 
 ## Görevler ve Sorumluluklar
 
-- Proje Yöneticisi/ İş Analisti
+-   Proje Yöneticisi/ İş Analisti
 
 Proje Yöneticisi / İş Analisti, projenin başlangıcı ve yürütülmesinden sorumlu yöneticidir. Proje yöneticisi ihtiyacı anlayıp, gerekli aksiyonları belirleyerek ekip içerisindeki planlamaları yapar, proje kaynaklarını ve ekibin yönetilmesini sağlar.
 
-- Tech Lead
+-   Tech Lead
 
 Yazılım takım liderinin ana görevi, projelerin tasarlanması sürecinde kullanılan teknolojiyi, araçları ve kodları denetlemektir. Aynı zamanda yazılımcılardan oluşan ekibi yönlendirmek ile yükümlüdür.
 
-- Yazılımcılar
+-   Yazılımcılar
 
 Yazılım ekibi; bağlı olarak çalıştığı projenin ihtiyaçlarına göre araştırma ve geliştirme yapan, yazılım programlarını tasarlayan ekiptir. Askıda kod projelerine open source olarak katkı sağlayan tüm yazılımcılar bu gruba dahil edilir.
 
 ## Davranış Kuralları
 
-- Tüm kimliklere sahip yazılımcıları memnuniyetle karşılıyor ve destekliyoruz.
-  Proje grupları içerisinde herhangi bir cinsel yönelim, cinsiyet kimliği ve ifadesi, ırk, etnik köken, kültür, ulusal köken, sosyal ve ekonomik sınıf, eğitim düzeyi, renk, göçmenlik durumu, cinsiyet, yaş, boyut, aile durumu, siyasal inanç, din, zihinsel veya fiziksel yetenek ayrım yapılmamalıdır.
-- Hepimiz her zaman aynı anda aynı fikirde olamayacağımızı kabul ediyor, ancak anlaşmazlığın saygısız bir davranış için mazeret olabileceğini reddediyoruz.
-  İnsanların kendilerini rahatsız veya tehdit altında hissettikleri bir ortam, üretken veya yaratıcı bir ortam değildir.
-- Başkalarına karşı nazik olunmalı ve hakaret edilmemeli veya edilmesine izin verilmemeli.
-  Taciz ve dışlayıcı davranışlar asla kabul edilemez.
+-   Tüm kimliklere sahip yazılımcıları memnuniyetle karşılıyor ve destekliyoruz. Proje grupları içerisinde herhangi bir cinsel yönelim, cinsiyet kimliği ve ifadesi, ırk, etnik köken, kültür, ulusal köken, sosyal ve ekonomik sınıf, eğitim düzeyi, renk, göçmenlik durumu, cinsiyet, yaş, boyut, aile durumu, siyasal inanç, din, zihinsel veya fiziksel yetenek ayrım yapılmamalıdır.
+-   Hepimiz her zaman aynı anda aynı fikirde olamayacağımızı kabul ediyor, ancak anlaşmazlığın saygısız bir davranış için mazeret olabileceğini reddediyoruz. İnsanların kendilerini rahatsız veya tehdit altında hissettikleri bir ortam, üretken veya yaratıcı bir ortam değildir.
+-   Başkalarına karşı nazik olunmalı ve hakaret edilmemeli veya edilmesine izin verilmemeli. Taciz ve dışlayıcı davranışlar asla kabul edilemez.
 
 Topluluk içerisinde yasak olan davranışlar aşağıdaki gibidir ancak sadece bunlarla sınırlı değildir
 
-- Tehdit
-- Agresif davranışlar
-- Ayrımcı ya da dışlayıcı her türlü şaka ya da dil kullanımı
-- Müstehcen ya da şiddet içeren her türlü sözel, metinsel yada görselin paylaşımı
-- Kişisel hakaret, ırkçılık ya da cinsiyetçilik
-- Kanunen belirlenmiş suçlar
-- Anayasa, iş sözleşmesi, aydınlatma yahut rıza onay metni ve benzeri anlaşmalar ile hukuken kısıtlanan davranışları gerçekleştirmek.
-- Yukarıdaki davranışların herhangi birini savunmak ya da kabul etmek
-- Fikir ayrılıkları ve anlaşmazlıklar çoğu zaman kaçınılmazdır, bu noktada önemli olan bu anlaşmazlıkları yapıcı bir iletişim diliyle çözmektir.
-- Farklı insanlar, farklı konular hakkında farklı bakış açılarına sahiptir ve bu sorunları çözmek veya yeni fikirler üretmek için oldukça değerlidir. Birinin sahip olduğu bir bakış açısını anlayamamak, yanlış olduğu anlamına gelmez. Hepimizin hata yapabileceğini ve birbirimizi suçlamanın bizi hiçbir yere götürmediğini unutmayın.
+-   Tehdit
+-   Agresif davranışlar
+-   Ayrımcı ya da dışlayıcı her türlü şaka ya da dil kullanımı
+-   Müstehcen ya da şiddet içeren her türlü sözel, metinsel yada görselin paylaşımı
+-   Kişisel hakaret, ırkçılık ya da cinsiyetçilik
+-   Kanunen belirlenmiş suçlar
+-   Anayasa, iş sözleşmesi, aydınlatma yahut rıza onay metni ve benzeri anlaşmalar ile hukuken kısıtlanan davranışları gerçekleştirmek.
+-   Yukarıdaki davranışların herhangi birini savunmak ya da kabul etmek
+-   Fikir ayrılıkları ve anlaşmazlıklar çoğu zaman kaçınılmazdır, bu noktada önemli olan bu anlaşmazlıkları yapıcı bir iletişim diliyle çözmektir.
+-   Farklı insanlar, farklı konular hakkında farklı bakış açılarına sahiptir ve bu sorunları çözmek veya yeni fikirler üretmek için oldukça değerlidir. Birinin sahip olduğu bir bakış açısını anlayamamak, yanlış olduğu anlamına gelmez. Hepimizin hata yapabileceğini ve birbirimizi suçlamanın bizi hiçbir yere götürmediğini unutmayın.
 
 ---
 

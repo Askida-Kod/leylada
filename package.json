@@ -5,7 +5,8 @@
         "webpack-watch": "webpack --watch --mode=development",
         "icons": "cpx 'assets/icons/**/*' node_modules/uikit/custom/icons && cd node_modules/uikit && npm install && yarn compile && cd -",
         "webpack-build": "webpack --mode=production",
-        "archive": "yarn webpack-build && composer archive --format=zip"
+        "archive": "yarn webpack-build && composer archive --format=zip",
+        "lint": "yarn prettier --config .prettierrc.json --write . && yarn webpack"
     },
     "devDependencies": {
         "@babel/core": "^7.13.14",
