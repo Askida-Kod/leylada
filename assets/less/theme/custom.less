@@ -1,18 +1,15 @@
-@navbar-nav-item-height: 120px;
-@navbar-nav-item-padding-horizontal: 15px;
-@navbar-nav-item-color: @global-color;
+@navbar-nav-item-height: 100px;
 @navbar-nav-item-font-size: @global-small-font-size;
 @navbar-nav-item-font-family: @global-font-family;
-@navbar-nav-item-hover-color: @global-color;
-@navbar-nav-item-onclick-color: @global-emphasis-color;
-@navbar-nav-item-active-color: @global-emphasis-color;
-
-@navbar-item-color: @global-color;
-
-@navbar-toggle-color: @global-muted-color;
-@navbar-toggle-hover-color: @global-color;
-
 @navbar-subtitle-font-size: @global-small-font-size;
+@navbar-nav-item-color: @global-color;
+@navbar-nav-item-hover-color: @global-color;
+@navbar-nav-item-onclick-color: @global-color;
+@navbar-nav-item-active-color: @global-primary-background;
+@navbar-item-color: @global-color;
+@navbar-toggle-color: @global-color;
+@navbar-toggle-hover-color: @global-muted-color;
+@navbar-nav-item-text-transform: uppercase;
 
 // Theme
 @navbar-nav-item-text-transform: capitalize;
@@ -44,23 +41,6 @@ em::after {
     background-color: @global-muted-color;
     z-index: 0;
 }
-
-.hook-button-primary {
-    border: 3px solid;
-    color: @global-color;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-    transition: all 0.2s ease-in-out;
-    background-color: transparent;
-}
-
-.hook-button-primary-hover {
-    opacity: 0.7;
-    color: @global-color;
-}
-
-@section-primary-color-mode: darken;
-@section-secondary-color-mode: darken;
 
 pre {
     font: 0.875rem / 1.5 Consolas, monaco, monospace;
@@ -117,4 +97,89 @@ h4,
 h5,
 h6 {
     font-weight: bold !important;
+}
+
+.hook-button() {
+    box-shadow: @global-large-box-shadow;
+}
+
+.hook-navbar-nav-item() {
+    position: relative;
+}
+
+.hook-navbar-nav-item,
+.hook-navbar-toggle {
+    font-size: @global-xsmall-font-size;
+    letter-spacing: 3;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.tm-text-spacing {
+    letter-spacing: 5;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.uk-navbar-nav > li > a::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: 30px;
+    background: @global-color;
+    transition: all 0.3s ease-in-out;
+}
+
+.uk-navbar-nav > li:hover > a::after,
+.uk-navbar-nav > li > a:focus::after,
+.uk-navbar-nav > li > a.uk-open::after{
+    width: 80%;
+}
+
+.uk-navbar-container {
+    background-color: @global-background !important;
+}
+
+.tm-slideshow-content {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+@dotnav-item-active-background: fade(@global-color, 100%);
+
+
+@nav-primary-item-font-size:                    @global-medium-font-size;
+@nav-primary-item-line-height:                  @global-line-height;
+@nav-primary-item-color:                        @global-color;
+@nav-primary-item-hover-color:                  @global-muted-color;
+@nav-primary-item-active-color:                 @global-emphasis-color;
+@nav-primary-header-color:                      @global-emphasis-color;
+@nav-primary-divider-border-width:              @global-border-width;
+@nav-primary-divider-border:                    @global-border;
+@nav-primary-sublist-item-color:                @global-muted-color;
+@nav-primary-sublist-item-hover-color:          @global-color;
+@nav-primary-sublist-item-active-color:         @global-emphasis-color;
+
+.uk-nav li > a{
+    letter-spacing: 3;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.hook-heading-small,
+.hook-heading-medium,
+.hook-heading-large,
+.hook-heading-xlarge,
+.hook-heading-2xlarge,
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: normal;
+}
+
+.hook-nav-primary-item{
+    text-transform: none;
 }

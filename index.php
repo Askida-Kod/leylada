@@ -1,6 +1,17 @@
 <?php
+
+use GreenCheap\Leylada\Bootstrap;
+
 return [
     "name" => "leylada",
+
+    "main" => function ($app) {
+        $app["theme_blog"] = new Bootstrap();
+    },
+
+    "autoload" => [
+        "GreenCheap\\Leylada\\" => "src",
+    ],
 
     "menus" => [
         "main" => "Main",
@@ -46,6 +57,20 @@ return [
 
     "config" => [
         "fakeSite" => false,
+        "modal" => [
+            "title" => "",
+            "desc" => "",
+            "images" => [
+                [
+                    "title" => "Etiam  volutpat tincidunt",
+                    "desc" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eos?",
+                    "image" => [
+                        "src" => "https://images.unsplash.com/photo-1516239482977-b550ba7253f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=940&q=80",
+                        "alt" => "International Women’s Day"
+                    ]
+                ]
+            ]
+        ],
         "socials" => [
             "facebook" => "",
             "linkedin" => "",
@@ -56,7 +81,7 @@ return [
 
     "events" => [
         "view.system/site/admin/settings" => function ($event, $view) use ($app) {
-            $view->script("site-theme", "theme:app/bundle/site-theme.js", "site-settings");
+            $view->script("site-theme", "theme:app/bundle/site-theme.js", ["site-settings", "multi-finder"]);
             $view->data('$theme', $this);
         },
 
@@ -73,7 +98,15 @@ return [
                 return;
             }
             $params = $view->params;
-            $view->data('$fakeSite', $params->get("fakeSite"));
+            $params->set("socials", array_filter($params->get("socials")));
+
+            $modalSlideShow = array_map(function($val){
+                if($val["image"]["src"]){
+                    return $val;
+                }
+            }, $params->get("modal.images"));
+
+            $params->set("modal.images", $modalSlideShow);
         },
     ],
 ];

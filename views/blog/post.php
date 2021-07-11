@@ -13,7 +13,7 @@ $lastPost = $theme_blog->getlastPost();
                     <?php if ($post->get("theme.youtube_url")): ?>
                         <i uk-icon="play-circle" class="uk-margin-small-right" uk-tooltip="<?= __("Video Content") ?>"></i>
                     <?php endif; ?>
-                    <?= __("Written by %name% on %date%", ["%name%" => $this->escape($post->user->name), "%date%" => '<time datetime="' . $post->date->format(\DateTime::ATOM) . '" v-cloak>{{ "' . $post->date->format(\DateTime::ATOM) . '" | date("longDate") }}</time>']) ?>
+                    <?= __("Written by %name% - %date%", ["%name%" => $this->escape($post->user->name), "%date%" => ' <time class="uk-margin-small-left" datetime="' . $post->date->format(\DateTime::ATOM) . '" v-cloak>{{ "' . $post->date->format(\DateTime::ATOM) . '" | date("longDate") }}</time>']) ?>
                 </p>
             </div>
             <div>

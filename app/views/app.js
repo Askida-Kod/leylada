@@ -2,6 +2,7 @@ import UIkit from "uikit";
 import Icons from "uikit/dist/js/uikit-icons";
 UIkit.use(Icons);
 import "../../assets/less/theme.less";
+
 window.addEventListener("load", () => {
     var bodyElement = document.getElementById("isbody");
     bodyElement.style.display = "block";
@@ -27,6 +28,7 @@ window.addEventListener("load", () => {
         const element = aElements[index];
         element.addEventListener("click", function (event) {
             if (event.target.href && !event.target.getAttribute("target")) {
+                console.log(event.target.getAttribute("nohref"));
                 event.preventDefault();
                 var bodyElement = document.getElementById("isbody");
                 bodyElement.classList.add("uk-animation-reverse");
@@ -36,6 +38,10 @@ window.addEventListener("load", () => {
                 }, 500);
             }
         });
-    }
-});
+    };
 
+    const slideshow = UIkit.slideshow("#slideshowmodalarea");
+    UIkit.util.on('#slideshowmodalarea', 'itemshow', function () {
+        // 😵‍💫
+    });
+});

@@ -1,5 +1,5 @@
 <?php if ($root->getDepth() === 0) : ?>
-    <ul class="uk-nav uk-nav-primary tm-nav-primary uk-margin-large-top uk-margin-large-bottom">
+    <ul class="uk-nav uk-nav-primary tm-text-spacing">
     <?php endif; ?>
 
     <?php foreach ($root->getChildren() as $node) : ?>
