@@ -46,6 +46,8 @@ return [
         "section" => "uk-section uk-section-default",
         "sectionSize" => "",
         "sectionImage" => "",
+        "sectionColorPreserve" => false,
+        "containerSize" => "uk-container",
         "contentAlign" => "",
         "titleHide" => false,
         "titleDomElement" => "h1",
@@ -77,6 +79,12 @@ return [
             "instagram" => "",
             "twitter" => ""
         ]
+    ],
+
+    "widgets" => [
+        "widgets/hero.php",
+        "widgets/grid.php",
+        "widgets/image.php"
     ],
 
     "events" => [

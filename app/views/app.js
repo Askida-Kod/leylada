@@ -28,7 +28,9 @@ window.addEventListener("load", () => {
         const element = aElements[index];
         element.addEventListener("click", function (event) {
             if (event.target.href && !event.target.getAttribute("target")) {
-                console.log(event.target.getAttribute("nohref"));
+                if(event.target.getAttribute("noanim")){
+                    return;
+                }
                 event.preventDefault();
                 var bodyElement = document.getElementById("isbody");
                 bodyElement.classList.add("uk-animation-reverse");

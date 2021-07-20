@@ -4,10 +4,12 @@ const path = require("path");
 module.exports = {
     entry: {
         app: "./app/views/app",
-        //fake: "./app/views/fake",
         "node-theme": "./app/components/node-theme.vue",
-        "widget-theme":"./app/components/widget-theme.vue",
-        "site-theme":"./app/components/site-theme.vue"
+        "widget-theme": "./app/components/widget-theme.vue",
+        "site-theme": "./app/components/site-theme.vue",
+        "hero-widget": "./app/widgets/hero-widget.vue",
+        "grid-widget": "./app/widgets/grid-widget.vue",
+        "image-widget": "./app/widgets/image-widget.vue",
     },
     output: {
         path: path.resolve(__dirname, "./app/bundle"),

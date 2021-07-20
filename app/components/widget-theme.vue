@@ -90,6 +90,46 @@
             </div>
 
             <div class="uk-margin">
+                <label class="uk-form-label">{{ "Container" | trans }}</label>
+                <div class="uk-form-controls">
+                    <select
+                        class="uk-select uk-form-width-large"
+                        v-model="widget.theme.containerSize"
+                    >
+                        <option value="uk-container">{{ "Default" | trans }}</option>
+                        <option value="uk-container uk-container-xsmall">
+                            {{ "XSmall" | trans }}
+                        </option>
+                        <option value="uk-container uk-container-small">
+                            {{ "Small" | trans }}
+                        </option>
+                        <option value="uk-container uk-container-large">
+                            {{ "Large" | trans }}
+                        </option>
+                        <option value="uk-container uk-container-xlarge">
+                            {{ "XLarge" | trans }}
+                        </option>
+                        <option value="uk-container uk-container-expand">
+                            {{ "Expand" | trans }}
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="uk-margin">
+                <label class="uk-form-label">{{
+                    "Section Color Preserve" | trans
+                }}</label>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <input
+                        type="checkbox"
+                        class="uk-checkbox"
+                        v-model="widget.theme.sectionColorPreserve"
+                    />
+                </div>
+            </div>
+
+            <div class="uk-margin">
                 <label class="uk-form-label">{{
                     "Background Image" | trans
                 }}</label>

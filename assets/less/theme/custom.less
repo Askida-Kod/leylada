@@ -183,3 +183,79 @@ h1,h2,h3,h4,h5,h6{
 .hook-nav-primary-item{
     text-transform: none;
 }
+
+.tm-slideshow-image {
+    width: 100%;
+    height: 500px !important;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.tm-slidehow-before {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid @global-inverse-color;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.tm-slideshow-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -50px;
+    left: -90px;
+    width: 250px;
+    height: 150px;
+    background: @global-inverse-color;
+    color: @global-color;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.tm-slideshow-video:hover {
+    background: fade(@global-background, 90%);
+    text-decoration: none;
+    bottom: -45px;
+}
+
+.tm-slideshow-video:hover::before {
+    top: -5px;
+}
+
+.tm-slideshow-video::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 0;
+    border: 2px solid @global-inverse-color;
+    transition: all 0.3s ease-in-out;
+}
+
+.tm-slideshow-video > div > .uk-icon {
+    color: @global-secondary-background !important;
+}
+
+.tm-hover-for-text{
+    position: absolute;
+    top:-20px;
+    left:0px;
+    width:300px;
+    z-index: 0;
+}
+
+.tm-text-brush{
+    font-family: 'Caveat', cursive !important;
+}

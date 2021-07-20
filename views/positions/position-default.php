@@ -2,6 +2,9 @@
     <?php
     $section = [$widget->theme["onHeightViewport"] ?: $widget->theme["section"], $widget->theme["sectionSize"], $widget->theme["contentAlign"]];
     $image = null;
+    if($widget->theme["sectionColorPreserve"]){
+        $section[] = "uk-preserve-color";
+    }
     if ($widget->theme["sectionImage"]) {
         $section[] = "uk-background-image uk-background-cover";
         $imageUrl = $view->url()->getStatic($widget->theme["sectionImage"]);
@@ -16,7 +19,7 @@
     <?php endif; ?>
 
     <section class="<?= implode(" ", $section) ?>" <?= $widget->theme["onHeightViewport"] ?: $image ?>>
-        <div class="uk-container uk-container-small">
+        <div class="<?= $widget->theme["containerSize"] ?>">
             <?php if (!$widget->theme["titleHide"]): ?>
                 <<?= $widget->theme["titleDomElement"] ?> class="<?= $title ?>"><?= $widget->title ?></<?= $widget->theme["titleDomElement"] ?>>
             <?php endif; ?>
