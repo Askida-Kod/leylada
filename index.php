@@ -15,7 +15,7 @@ return [
 
     "menus" => [
         "main" => "Main",
-        "modal" => "Modal"
+        "modal" => "Modal",
     ],
 
     "positions" => [
@@ -55,6 +55,13 @@ return [
         "titleClass" => "",
     ],
 
+    "routes" => [
+        "/api/leylada" => [
+            "name" => "@api/leylada",
+            "controller" => ["GreenCheap\\Leylada\\Controller\\ApiLeyladaController"],
+        ],
+    ],
+
     "settings" => "@site/settings#site-theme",
 
     "config" => [
@@ -64,28 +71,24 @@ return [
             "desc" => "",
             "images" => [
                 [
-                    "title" => "Etiam  volutpat tincidunt",
+                    "title" => "Etiam volutpat tincidunt",
                     "desc" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eos?",
                     "image" => [
                         "src" => "https://images.unsplash.com/photo-1516239482977-b550ba7253f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=940&q=80",
-                        "alt" => "International Women’s Day"
-                    ]
-                ]
-            ]
+                        "alt" => "International Women’s Day",
+                    ],
+                ],
+            ],
         ],
         "socials" => [
             "facebook" => "",
             "linkedin" => "",
             "instagram" => "",
-            "twitter" => ""
-        ]
+            "twitter" => "",
+        ],
     ],
 
-    "widgets" => [
-        "widgets/hero.php",
-        "widgets/grid.php",
-        "widgets/image.php"
-    ],
+    "widgets" => ["widgets/hero.php", "widgets/grid.php", "widgets/image.php", "widgets/message.php", "widgets/blogs.php"],
 
     "events" => [
         "view.system/site/admin/settings" => function ($event, $view) use ($app) {
@@ -108,8 +111,8 @@ return [
             $params = $view->params;
             $params->set("socials", array_filter($params->get("socials")));
 
-            $modalSlideShow = array_map(function($val){
-                if($val["image"]["src"]){
+            $modalSlideShow = array_map(function ($val) {
+                if ($val["image"]["src"]) {
                     return $val;
                 }
             }, $params->get("modal.images"));

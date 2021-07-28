@@ -1,5 +1,5 @@
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
-const path = require("path");
+const VueLoaderPlugin = require("vue-loader/lib/plugin")
+const path = require("path")
 
 module.exports = {
     entry: {
@@ -10,6 +10,8 @@ module.exports = {
         "hero-widget": "./app/widgets/hero-widget.vue",
         "grid-widget": "./app/widgets/grid-widget.vue",
         "image-widget": "./app/widgets/image-widget.vue",
+        "message-widget": "./app/widgets/message-widget.vue",
+        "blog-widget": "./app/widgets/blog-widget.vue",
     },
     output: {
         path: path.resolve(__dirname, "./app/bundle"),
@@ -32,4 +34,4 @@ module.exports = {
         ],
     },
     plugins: [new VueLoaderPlugin()],
-};
+}

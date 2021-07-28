@@ -136,7 +136,7 @@ h6 {
 
 .uk-navbar-nav > li:hover > a::after,
 .uk-navbar-nav > li > a:focus::after,
-.uk-navbar-nav > li > a.uk-open::after{
+.uk-navbar-nav > li > a.uk-open::after {
     width: 80%;
 }
 
@@ -152,22 +152,21 @@ h6 {
 
 @dotnav-item-active-background: fade(@global-color, 100%);
 
+@nav-primary-item-font-size: @global-medium-font-size;
+@nav-primary-item-line-height: @global-line-height;
+@nav-primary-item-color: @global-color;
+@nav-primary-item-hover-color: @global-muted-color;
+@nav-primary-item-active-color: @global-emphasis-color;
+@nav-primary-header-color: @global-emphasis-color;
+@nav-primary-divider-border-width: @global-border-width;
+@nav-primary-divider-border: @global-border;
+@nav-primary-sublist-item-color: @global-muted-color;
+@nav-primary-sublist-item-hover-color: @global-color;
+@nav-primary-sublist-item-active-color: @global-emphasis-color;
 
-@nav-primary-item-font-size:                    @global-medium-font-size;
-@nav-primary-item-line-height:                  @global-line-height;
-@nav-primary-item-color:                        @global-color;
-@nav-primary-item-hover-color:                  @global-muted-color;
-@nav-primary-item-active-color:                 @global-emphasis-color;
-@nav-primary-header-color:                      @global-emphasis-color;
-@nav-primary-divider-border-width:              @global-border-width;
-@nav-primary-divider-border:                    @global-border;
-@nav-primary-sublist-item-color:                @global-muted-color;
-@nav-primary-sublist-item-hover-color:          @global-color;
-@nav-primary-sublist-item-active-color:         @global-emphasis-color;
-
-.uk-nav li > a{
+.uk-nav li > a {
     letter-spacing: 3;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .hook-heading-small,
@@ -175,12 +174,17 @@ h6 {
 .hook-heading-large,
 .hook-heading-xlarge,
 .hook-heading-2xlarge,
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Josefin Sans', sans-serif !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Sans", sans-serif !important;
     font-weight: normal;
 }
 
-.hook-nav-primary-item{
+.hook-nav-primary-item {
     text-transform: none;
 }
 
@@ -248,14 +252,20 @@ h1,h2,h3,h4,h5,h6{
     color: @global-secondary-background !important;
 }
 
-.tm-hover-for-text{
+.tm-hover-for-text {
     position: absolute;
-    top:-20px;
-    left:0px;
-    width:300px;
+    top: -20px;
+    left: 0px;
+    width: 300px;
     z-index: 0;
 }
 
-.tm-text-brush{
-    font-family: 'Caveat', cursive !important;
+.tm-text-brush {
+    font-family: "Caveat", cursive !important;
+}
+
+.tm-blogs-widget {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
